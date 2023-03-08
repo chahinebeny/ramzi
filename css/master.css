@@ -967,6 +967,9 @@ footer .footer-item li:hover{
 .color-form input[type="radio"]:nth-child(4){
     background-color: maroon;
 }
+.color-form input[type="radio"]:nth-child(5){
+    background-color: #cfb997;
+}
 
 
 .color-form   input[type="radio"]:checked ,
