@@ -47,40 +47,60 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-switchcolor(1);
+switchcolor(0);
 function switchcolor(m){
   let dots = document.getElementsByClassName("color");
   let captionTextcolor = document.getElementById("caption-color");
   captionTextcolor.innerHTML = dots[m].alt;
 }
-
-
-let slideIndex2 = 1 ;
-showSlides2(slideIndex2);
-function plusSlides2(n) {
-  showSlides2(slideIndex2 += n);
+switchmodele(0);
+function switchmodele(j){
+  let dots = document.getElementsByClassName("modele");
+  let captionTextcolor = document.getElementById("caption-modele");
+  captionTextcolor.innerHTML = dots[j].alt;
 }
 
-function currentSlide2(n) {
-  showSlides2(slideIndex2 = n);
+var element = document.getElementsByClassName('.sticky-cart-bar');
+if(typeof(element) != 'undefined' && element != null )
+{
+  document.querySelector('footer').style.margin="0 0 50px";
 }
 
-function showSlides2(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides-avis");
-  if (n > slides.length) {slideIndex2 = 1}
-  if (n < 1) {slideIndex2 = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex2-1].style.display = "block";
+const myInput = document.getElementById("my-input");
+function stepper(btn){
+    let id = btn.getAttribute("id");
+    let min = 1;
+    let val = myInput.getAttribute("value");
+    let calcStep = (id == "increment") ? (1) : (-1);
+    let newValue = parseInt(val) + calcStep;
+    if(newValue >= min){
+        myInput.setAttribute("value", newValue);
+        document.getElementById("quantity").setAttribute("value", newValue);
+    }
 }
 
+// let slideIndex2 = 1 ;
+// showSlides2(slideIndex2);
+// function plusSlides2(n) {
+//   showSlides2(slideIndex2 += n);
+// }
 
-//sticky cart bar click on top
-function sub_sticky(){
-    document.querySelector('#laka').click();
-}
+// function currentSlide2(n) {
+//   showSlides2(slideIndex2 = n);
+// }
+
+// function showSlides2(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides-avis");
+//   if (n > slides.length) {slideIndex2 = 1}
+//   if (n < 1) {slideIndex2 = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slides[slideIndex2-1].style.display = "block";
+// }
+
+
 
 //seend data
 var form = document.getElementById('sheetdb-form');
@@ -111,22 +131,5 @@ var form = document.getElementById('sheetdb-form');
         });
 
 
-var element = document.getElementsByClassName('.sticky-cart-bar');
-if(typeof(element) != 'undefined' && element != null )
-{
-  document.querySelector('footer').style.margin="0 0 50px";
-}
 
-const myInput = document.getElementById("my-input");
-function stepper(btn){
-    let id = btn.getAttribute("id");
-    let min = 1;
-    let val = myInput.getAttribute("value");
-    let calcStep = (id == "increment") ? (1) : (-1);
-    let newValue = parseInt(val) + calcStep;
-    if(newValue >= min){
-        myInput.setAttribute("value", newValue);
-        document.getElementById("quantity").setAttribute("value", newValue);
-    }
-}
 
