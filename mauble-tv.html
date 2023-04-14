@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Meuble</title>
+    <link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '587434530004970');
+        fbq('track', 'PageView');
+        fbq('track', 'ViewContent',{content_type:'meuble-tv-page'});
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=587434530004970&ev=PageView&noscript=1"
+    /></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+    <div class="firstheader">
+        <div class="text">
+            <h3>SPACE MEUBLE</h3>
+        </div>
+    </div>
+    <div class="page">
+        <div class="header-wrapper">
+            <header>
+                <div class="container">
+                    <div class="icon">
+                        <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-regular fa-magnifying-glass"></i></a>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">page principale</a></li>
+                        <li> <a href="call_us.html">Contactez-nous</a></li>
+                        <li><a href="about.html">À propos de SPACE MEUBLE</a></li>
+                    </ul>
+                    <div class="logo">
+                        <a href="index.html"><img src="image/logo.jpg" alt=""></a>
+                    </div>
+                    <div class="nav">
+                        <a href="javascript:void(0)" onclick="show_slidenav()" >
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+                    <div class="overlay" onclick="hide_overlay()"></div>
+                    <nav class="slide-navigation">
+                        <a href="index.html" class="nav-logo">
+                            <img src="image/logo.jpg" alt="">
+                        </a>
+                        <form action="">
+                            <div class="search-input">
+                                <input type="search" placeholder="البحث عن منتج" >
+                                <button class="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">page principale</a></li>
+                                <li> <a href="call_us.html">Contactez-nous</a></li>
+                                <li><a href="about.html">À propos de SPACE MEUBLE</a></li>
+                            </ul>
+                        </form>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="content product">
+            <div class="process-successfully">
+                <p>عزيزي الزبون
+                    ،شكرا لك على طلبك الأخير! يسعدنا أن نؤكد استلامنا لطلبك وجارٍ معالجته.
+                </p>
+                <p>نحن نقدر عملك وسنبذل قصارى جهدنا لشحن طلبك في أقرب وقت ممكن. إذا كانت لديك أي أسئلة أو استفسارات ، فلا تتردد في التواصل معنا على الفيسبوك او عبر الهاتف الموجود اسفلا .</p>
+                <ul class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=100090426739061" target="_blank" class="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/bendeco.meubles/" target="_blank" class="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <h2>06.63.92.38.12</h2>
+                </ul>
+                <p>مع أطيب التحيات،<span>SPACE MEUBLE</span></p>
+
+            </div>
+            <div class="sticky-cart-bar" dis>
+                <div class="container">
+                    <div class="quantity">
+                        <span id="increment" class="quantity-handler quantity-handler-left" onclick="stepper(this)">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                        <input type="number" class="single-quantity" value="1" id="sticky" readonly>
+                        <span class="quantity-handler quantity-handler-right" onclick="stepper(this)">
+                            <i class="fa-solid fa-minus"></i>
+                        </span>
+                    </div>
+                    <a href="#submit" onclick()="sub_sticky">Cliquez ici pour confirmer la demande</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="product-info">
+                    <div class="image">
+                        <div class="container-slider">
+                            <div class="mySlides mySlides-product">
+                                <div class="numbertext">1 / 8</div>
+                                <img src="image/meubletv1.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides mySlides-product">
+                                <div class="numbertext">2 / 8</div>
+                                <img src="image/meubletv2.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides mySlides-product">
+                                <div class="numbertext">3 / 8</div>
+                                <img src="image/meubletv3.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides mySlides-product">
+                                <div class="numbertext">4 / 8</div>
+                                <img src="image/meubletv4.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides mySlides-product">
+                                <div class="numbertext">5 / 8</div>
+                                <img src="image/meubletv5.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides mySlides-product">
+                                <div class="numbertext">6 / 8</div>
+                                <img src="image/meubletv1.1.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides mySlides-product">
+                                <div class="numbertext">7 / 8</div>
+                                <img src="image/meubletv1.2.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides mySlides-product">
+                                <div class="numbertext">8 / 8</div>
+                                <img src="image/meubletv1.3.jpg" style="width:100%">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                              </div>
+                            <div class="row">
+                              <div class="column">
+                                <img class="demo cursor" src="image/meubletv1.jpg" style="width:100%" onclick="currentSlide(0)" alt="Meuble TV modèle 1 ">
+                              </div>
+                              <div class="column">
+                                <img class="demo cursor" src="image/meubletv2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Meuble TV modèle 1">
+                              </div>
+                              <div class="column">
+                                <img class="demo cursor" src="image/meubletv3.jpg" style="width:100% ; height: 36px;" onclick="currentSlide(3)" alt="Meuble TV modèle 1">
+                              </div>
+                              <div class="column">
+                                <img class="demo cursor" src="image/meubletv4.jpg" style="width:100%" onclick="currentSlide(4)"t alt="Meuble TV modèle 1" >
+                              </div>
+                              <div class="column">
+                                <img class="demo cursor" src="image/meubletv5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Meuble TV modèle 1">
+                              </div>
+                              <div class="column">
+                                <img class="demo cursor" src="image/meubletv1.1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Meuble TV modèle 2">
+                              </div>
+                              <div class="column">
+                                <img class="demo cursor" src="image/meubletv1.2.jpg" style="width:100%" onclick="currentSlide(7)" alt="Meuble TV modèle 2">
+                              </div>
+                              <div class="column">
+                                <img class="demo cursor" src="image/meubletv1.3.jpg" style="width:100%" onclick="currentSlide(8)" alt="Meuble TV modèle 2">
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="description" id="submit">
+                        <h3>Meuble TV original avec étagère et armoires </h3>
+                        <div class="price">
+                            <div class="price-before">
+                                <span class="value">10500</span>
+                                <span class="currency">&nbsp;DA</span>
+                            </div>
+                            <div class="price-after">
+                                <span class="value">9500</span>
+                                <span class="currency">&nbsp;DA</span>
+                                <h3>+livraison gratuit</h3>
+                            </div>
+
+
+                        </div>
+                        <form action="https://sheetdb.io/api/v1/s19kgj49uh061" method="post" id="sheetdb-form">
+                            <input type="hidden" name="data[type-product]" value="meuble-tv-2">
+                            <input type="hidden" name="data[quantity]" value="1" id="quantity">
+                            <div class="chekout-form">
+                                <h2>Pour commander, entrez vos informations dans les cases ci-dessous</h2>
+                                <div class="form-group">
+                                    <input type="text" name="data[first_name]" placeholder="le nom" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="data[phone]" placeholder="Numéro de téléphone" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="data[city]" placeholder="Wilaya" required>
+                                </div>
+                                <!-- <div class="form-group">
+                                    <input type="text" name="data[adress-home]" placeholder="العنوان بالضبط" required>
+                                </div> -->
+                            </div>
+                            <div class="modele-form">
+                                <div class="modele-h">
+                                    <h3>modele : </h3>
+                                    <h4 id="caption-modele"></h4>
+                                </div>
+                                <div class="modele-i">
+                                    <label for="modele1">modele 1</label>
+                                    <input id="modele1" type="radio" class="modele" name="data[modele]" value="modele1" checked alt="1" onclick="switchmodele(0),currentSlide(1)" >
+                                </div>
+                                <div class="modele-i">
+                                    <label for="modele2">modele 2</label>
+                                    <input id="modele2" type="radio" class="modele" name="data[modele]" value="modele2"  alt="2" onclick="switchmodele(1),currentSlide(6)">
+                                </div>
+                            </div>
+                            <div class="color-form">
+                                <div class="color-h">
+                                    <h3>color : </h3>
+                                    <h4 id="caption-color"></h4>
+                                </div>
+                                <div class="color-input">
+                                    <input class="color" type="radio" name="data[color]" value="noir" checked alt="noir" onclick="switchcolor(0)">
+                                    <input class="color" type="radio" name="data[color]" value="gris" alt="gris" onclick="switchcolor(1)">
+                                    <input class="color" type="radio" name="data[color]" value="blanc" alt="blanc" onclick="switchcolor(2)">
+                                    <input class="color" type="radio" name="data[color]" value="maroon" alt="maroon" onclick="switchcolor(3)">
+                                    <input class="color" type="radio" name="data[color]" value="beige" alt="beige" onclick="switchcolor(4)">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="confirm-order">
+                            <button id="laka" type="submit" form="sheetdb-form" value="Update" >Cliquez ici pour confirmer la demande</button>
+                            <div class="quantity">
+                                <span id="increment" class="quantity-handler quantity-handler-left" onclick="stepper(this)">
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                                <input type="number" id="my-input" class="single-quantity" value="1" readonly>
+                                <span class="quantity-handler quantity-handler-right" onclick="stepper(this)">
+                                    <i class="fa-solid fa-minus"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-description">
+                            <h3> *** Meuble TV ***  </h3>
+                            <div class="des-p">
+                                <p>
+                                    <strong>--Matière : </strong>en panneaux de particules
+                                </p>
+                                <p>
+                                    <strong>--Finition : </strong>Mélaminée
+                                </p>
+                                <p>
+                                    <strong>--color :</strong>Blanc-Gris-Noir-Beaje
+                                </p>
+                                <p>
+                                    <strong>--Composition :</strong> 
+                                    <ul>
+                                        <li>120cm * 48cm * 30cm  <strong style="color:#46360d;">= 8500da</strong></li>
+                                        <li>150cm * 48cm * 30cm  <strong style="color:#46360d; ">= 9500da</strong></li>
+                                        <li>180cm * 48cm * 30cm  <strong style="color:#46360d; ">= 1200da</strong></li>
+                                    </ul>
+                                </p>
+
+                                <p style="direction: rtl;">
+                                    👈الدفع عند الاستلام
+                                    <br>
+                                    👈توصيل 58 ولاية
+                                </p>
+                                <p style="direction: rtl;">مرحبا با الجميع.</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="image/logo.jpg" alt="">
+                </a>
+            </div>
+            <div class="footer">
+                <div class="footer-item">
+                    <h3>عن المتجر</h3>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="about.html" >عن المتجر</a>
+                        </li>
+                        <li>
+                            <a href="pay-methode.html" >طرق الدفع</a>
+                        </li>
+                        <li>
+                            <a href="delivery.html" >الشحن والتسليم</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>اتصل بنا</h3>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="call_us.html" >اتصل بنا</a>
+                        </li>
+                        <li>
+                            <a href="qustion.html">الأسئلة المتكررة</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>الشروط والسياسات</h3>
+                    <ul class="list-unstyled footer-list">
+                        <li>
+                            <a href="/pages/terms-and-conditions" >
+                                شروط الاستخدام
+                            </a></li>
+                        <li>
+                            <a href="/pages/return-policy" >
+                                سياسة الاستبدال والاسترجاع
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/confidentiality" >
+                                سياسة الخصوصية
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <ul class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100090426739061" target="_blank" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/bendeco.meubles/" target="_blank" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </ul>
+        </div>
+    </footer>
+    <script src="js/master.js"></script>
+    <script src="js/color.js"></script>
+</body>
+</html>

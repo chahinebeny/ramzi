@@ -448,6 +448,7 @@ align-items: center;
 /* start content */
 .content{
     margin-top: 50px;
+    background-color: #f6f6f6;
 }
 
 .page .content .container > div:not(:first-child) {
@@ -539,8 +540,7 @@ border-color: var(--main-color);
 }
 
 .content  .price .price-after{
-    font-size: 18px;
-    color: var(--main-color);
+    color: red;
     font-weight: bold;
 }
 
@@ -757,9 +757,9 @@ footer .footer-item li:hover{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
     gap: 25px;
     margin-bottom: 80px;
+    padding: 30px;
 }
 @media (max-width:992px) {
     .content.product .product-info{
@@ -828,14 +828,18 @@ footer .footer-item li:hover{
 
 .product .description > .price{    
     display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column; 
+    justify-content: start;
+    align-items: center; 
 }
 .product .description > .price .price-after{    
-    font-size: 26px;
+    font-size: 36px;
     display: flex;
     align-items: center;
+}
+@media (max-width:992px) {
+    .product .description > .price .price-after{    
+        font-size: 30px;
+    }
 }
 .product .description > .price .price-before{    
     margin: 0;
@@ -1067,6 +1071,7 @@ footer .footer-item li:hover{
     text-align: center;
     font-size: 18px;
     font-weight: 600;
+    background-color: transparent;
 }
 .product .description .confirm-order button{
     flex: 1;
