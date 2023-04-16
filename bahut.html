@@ -24,7 +24,7 @@
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '587434530004970');
         fbq('track', 'PageView');
-        fbq('track', 'ViewContent',{content_type:'bahut-page'});
+        fbq('track', 'ViewContent',{content_type:'Bayou-page'});
     </script>
     <noscript><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=587434530004970&ev=PageView&noscript=1"
@@ -117,23 +117,31 @@
                     <div class="image">
                         <div class="container-slider">
                             <div class="mySlides mySlides-product">
-                                <div class="numbertext">1 / 4</div>
+                                <div class="numbertext">1 / 6</div>
                                 <img src="image/bahut1.jpg" style="width:100%">
                             </div>
 
                             <div class="mySlides mySlides-product">
-                                <div class="numbertext">2 / 4</div>
+                                <div class="numbertext">2 / 6</div>
                                 <img src="image/bahut2.jpg" style="width:100%">
                             </div>
 
                             <div class="mySlides mySlides-product">
-                                <div class="numbertext">3 / 4</div>
+                                <div class="numbertext">3 / 6</div>
                                 <img src="image/bahut3.jpg" style="width:100%">
                             </div>
 
                             <div class="mySlides mySlides-product">
-                                <div class="numbertext">4 / 4</div>
+                                <div class="numbertext">4 / 6</div>
                                 <img src="image/bahut4.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides mySlides-product">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="image/bahut7.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides mySlides-product">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="image/bahut5.jpg" style="width:100%">
                             </div>
                             <a class="prev" onclick="plusSlides(-1)">❮</a>
                             <a class="next" onclick="plusSlides(1)">❯</a>
@@ -143,22 +151,28 @@
                               </div>
                             <div class="row">
                               <div class="column">
-                                <img class="demo cursor" src="image/bahut1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bahut modèle 1 ">
+                                <img class="demo cursor" src="image/bahut1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bayou modèle 1 Beige clair">
                               </div>
                               <div class="column">
-                                <img class="demo cursor" src="image/bahut2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bahut modèle 1">
+                                <img class="demo cursor" src="image/bahut2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bayou modèle 1 Beige clair">
                               </div>
                               <div class="column">
-                                <img class="demo cursor" src="image/bahut3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Bahut modèle 2">
+                                <img class="demo cursor" src="image/bahut3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Bayou modèle 2 Beige clair">
                               </div>
                               <div class="column">
-                                <img class="demo cursor" src="image/bahut4.jpg" style="width:100%" onclick="currentSlide(4)"t alt="Bahut modèle 2" >
+                                <img class="demo cursor" src="image/bahut4.jpg" style="width:100%" onclick="currentSlide(4)"t alt="Bayou modèle 2 Beige clair" >
+                              </div>
+                              <div class="column">
+                                <img class="demo cursor" src="image/bahut7.jpg" style="width:100%" onclick="currentSlide(5)"t alt="Bayou modèle 1 blanc" >
+                              </div>
+                              <div class="column">
+                                <img class="demo cursor" src="image/bahut5.jpg" style="width:100%" onclick="currentSlide(6)"t alt="Bayou modèle 1 blanc" >
                               </div>
                             </div>
                           </div>
                     </div>
                     <div class="description" id="submit">
-                        <h3>Bahut Metal</h3>
+                        <h3>Bayou Metal</h3>
                         <div class="price">
                             <div class="price-before">
                                 <span class="value">45000</span>
@@ -172,7 +186,7 @@
 
                         </div>
                         <form action="https://sheetdb.io/api/v1/s19kgj49uh061" method="post" id="sheetdb-form">
-                            <input type="hidden" name="data[type-product]" value="Bahut">
+                            <input type="hidden" name="data[type-product]" value="Bayou">
                             <input type="hidden" name="data[quantity]" value="1" id="quantity">
                             <div class="chekout-form">
                                 <h2>Pour commander, entrez vos informations dans les cases ci-dessous</h2>
@@ -185,9 +199,6 @@
                                 <div class="form-group">
                                     <input type="text" name="data[city]" placeholder="Wilaya" required>
                                 </div>
-                                <!-- <div class="form-group">
-                                    <input type="text" name="data[adress-home]" placeholder="العنوان بالضبط" required>
-                                </div> -->
                             </div>
                             <div class="modele-form">
                                 <div class="modele-h">
@@ -196,11 +207,21 @@
                                 </div>
                                 <div class="modele-i">
                                     <label for="modele1">modele 1</label>
-                                    <input id="modele1" type="radio" class="modele" name="data[modele]" value="modele1" checked alt="1" onclick="switchmodele(0),currentSlide(1)" >
+                                    <input id="modele1" type="radio" class="modele" name="data[modele]" value="modele1" checked alt="1" onclick="switchmodele(0),currentSlide(1)" style="background-image: url(image/bahut1.jpg); background-size: contain;" >
                                 </div>
                                 <div class="modele-i">
                                     <label for="modele2">modele 2</label>
-                                    <input id="modele2" type="radio" class="modele" name="data[modele]" value="modele2"  alt="2" onclick="switchmodele(1),currentSlide(3)">
+                                    <input id="modele2" type="radio" class="modele" name="data[modele]" value="modele2"  alt="2" onclick="switchmodele(1),currentSlide(3)" style="background-image: url(image/bahut2.jpg); background-size: contain;">
+                                </div>
+                            </div>
+                            <div class="color-form">
+                                <div class="color-h">
+                                    <h3>color : </h3>
+                                    <h4 id="caption-color"></h4>
+                                </div>
+                                <div class="color-input">
+                                    <input class="color" type="radio" name="data[color]" value="beige clair" checked alt="beige clair" onclick="switchcolor(0)" style="background-color: #E8D3BB;">
+                                    <input class="color" type="radio" name="data[color]" value="blanc" alt="blanc" onclick="switchcolor(1)" style="background-color: white;">
                                 </div>
                             </div>
                         </form>
@@ -217,7 +238,7 @@
                             </div>
                         </div>
                         <div class="text-description">
-                            <h3> *** Meuble TV ***  </h3>
+                            <h3> *** Bayou ***  </h3>
                             <div class="des-p">
                                 <p>
                                     <strong>--Matière : </strong>en panneaux de particules
